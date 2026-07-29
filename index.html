@@ -502,7 +502,7 @@
 
   function beginMusic(){
     if(hasRealSrc){
-      bgmEl.volume = 1;
+      bgmEl.volume = 1.0;
       bgmEl.play().catch(()=>{ startGeneratedAmbient(); });
     } else {
       startGeneratedAmbient();
